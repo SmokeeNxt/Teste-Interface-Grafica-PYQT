@@ -10,10 +10,11 @@ class UI(QMainWindow):
     def __init__(self):
         super(UI, self).__init__()
         loadUi("Conv.ui", self)
-        self.titulo = "Arthur"
+        #Caso eu queira mudar o titulo da janela: Devo escrever o nome + o comando para Setar o nome da janela, como escrito abaixo:
+        #self.titulo = "Arthur"
+        #self.setWindowTitle(self.titulo)
         self.pushButton_Converter.clicked.connect(self.Conversao)
         self.Recept_User_Money
-        self.setWindowTitle(self.titulo)
  #################################
     def Conversao(self):
         conteudo = self.Recept_User_Money.text()
